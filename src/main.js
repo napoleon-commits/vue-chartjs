@@ -1,8 +1,11 @@
 import Vue from 'vue'
-import UpdatingChart from './components/UpdatingChart'
+import App from './App';
 
 Vue.config.productionTip = false
 
+import store from './store'
+
 new Vue({
-  render: h => h(UpdatingChart),
+  store,
+  render: h => h(App),
 }).$mount('#app')
